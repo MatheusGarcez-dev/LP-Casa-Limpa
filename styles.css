@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #8B42CD, #F62FAB);
+    border-radius: 30px;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+/*header*/
+header {
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 4%;
+}
+
+header .interface{
+    margin-top: 10px;
+}
+
+.header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Garante que o conteúdo dentro de header1 ocupe toda a largura */
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+.links-header{
+    margin-left: 320px;
+    margin-bottom: 30px;
+}
+
+.links-header a{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.links-header a:hover{
+    transform:scale(1.1);
+    color: #6e1e4f;
+}
+
+/*button*/
+.button {
+   background-color: white;
+   color: #F62FAB;
+   border-radius: 15px;
+   font-size: 7px;
+   padding: 10px;
+   border: none;
+   cursor: pointer;
+   transition: all ease-in-out .2s;
+}
+
+/* Efeito do hover */
+.button:hover {
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    color: white; /* Texto branco no hover */
+    transform: scale(1.05); /* Efeito de aumentar o botão */
+    transition: .2s;
+}
+
+header button {
+    margin-left: 30px;
+    margin-bottom:40px;
+}
+
+/*section1*/
+section.sec-1 {
+    height: 750px;
+    background: linear-gradient(to bottom, #8B42CD, #F62FAB);
+    margin-top: -300px;
+}
+
+
+section.sec-1 .flex {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 115px;
+}
+
+.txt-topo {
+    margin-top: 150px;
+}
+
+.txt-topo p {
+    font-size: 20px;
+    max-width: 719px;
+    color: white;
+    padding: 10px;
+}
+
+.txt-topo h1 {
+    color: #ffffff;
+    font-size: 40px;
+    max-width: 719px;
+    padding: 10px;
+}
+
+.txt-topo h2 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.txt-topo button {
+    margin-left: 10px;
+}
+
+.img-topo {
+    margin-top: 150px;
+}
+
+/*section2*/
+section.sec-2 {
+    height: 700px;
+    margin-top: 100px;
+}
+
+.botao2 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se necessário) */
+    margin-top: 50px; /* Ajuste conforme necessário */
+}
+
+.botao2 .button{
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.txt-2 {
+    font-size: 38px;
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    max-width: 350px;
+    line-height: 55px;
+}
+  
+.box {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+    width: 267px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 24px; /* Deve ser maior que o border-radius original */
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    z-index: -1;
+}
+
+
+.box border-image{
+    border-radius: 20px;
+}
+
+.box h1{
+    font-size: 16px;
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.box p{
+    font-size: 14px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.box .button{
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    position: relative;
+    margin-top: auto;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sec-2 .flex{
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*section3*/
+section.sec-3{
+    height: 700px;
+}
+
+.trabalhos .flex{
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.txt3 h1{
+    font-size: 48px;
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    max-width: 350px;
+    line-height: 55px;
+}
+
+.para3 p {
+    font-size: 20px;
+    color: #2d2d2d;
+    max-width: 677px;
+    margin-left: 180px;
+}
+
+.botao3 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se necessário) */
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.botao3 .button{
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    position: relative;
+    margin-top: auto;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.serv img{
+    transition: all ease-in-out .2s;
+}
+
+.serv img:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/*section4*/
+section.sec-4{
+    height: 700px;
+    background: linear-gradient(to top, #8B42CD, #F62FAB);
+
+}
+
+.flex {
+    display: flex;
+}
+
+.escopo {
+    display: flex;
+    align-items: center;
+    margin-top: 125px;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.step {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step::after {
+    content: "✔";
+    font-size: 24px;
+    font-weight: bold;
+    color: #8a2be2;
+}
+
+.line {
+    width: 4px;
+    height: 50px;
+    background: white;
+}
+
+.txt-escopo {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.txt-esc h1 {
+    font-size: 32px;
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+.txt-esc p {
+    font-size: 16px;
+    opacity: 0.9;
+    color: white;
+}
+
+.txt4 h1 {
+    font-size: 48px;
+    color: white;
+    max-width: 501px;
+    line-height: 50px;
+    position: relative;
+    top: 50px; 
+}
+
+.botao4 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se necessário) */
+    margin-top: 50px; /* Ajuste conforme necessário */
+}
+
+.botao4 .button{
+    font-size: 12px;
+}
+
+/*section5*/
+section.sec-5{
+    height: 600px;
+}
+
+.txt-sobre h1{
+    font-size: 48px;
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    max-width: 297px;
+    line-height: 55px;
+}
+
+.txt-sobre p{
+    font-size: 20px;
+    color: #2d2d2d;
+    max-width: 583px;
+}
+
+.txt-sobre .button{
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    position: relative;
+    margin-top: auto;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sec-5 {
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    height: 100vh; /* Faz a section ocupar 100% da altura da tela */
+    padding: 20px; /* Adiciona um espaçamento interno para não grudar nas bordas */
+}
+
+.sec-5 .interface {
+    display: flex;
+    justify-content: center; /* Centraliza os itens da interface (imagem e texto) */
+    align-items: center; /* Centraliza verticalmente os itens da interface */
+    max-width: 1200px; /* Limita a largura da interface para não esticar demais */
+    width: 100%; /* Faz a interface ocupar 100% da largura disponível */
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between; /* Separa a imagem e o texto igualmente */
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    width: 100%;
+    max-width: 100%; /* Evita que o conteúdo ultrapasse a largura disponível */
+}
+
+/*rodape*/
+section.rodape{
+    height: 300px;
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+}
+
+.txt-rodape p{
+    color: white;
+    max-width: 629px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: -25px;
+}
+
+.rdireita h1{
+    max-width: 253px;
+    color: white;
+    font-size: 48px;
+    line-height: 35px;
+    padding-bottom: 30px;
+}
+
+.rdireita{
+    margin-top: 40px;
+}
+
+
+/* Estiliza os links do rodapé */
+.rodape a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Cria um efeito de fundo animado ao passar o mouse */
+.rodape a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #8B42CD, #F62FAB);
+    z-index: -1;
+    transition: left 0.4s ease-in-out;
+}
+
+/* Ativa a animação do fundo ao passar o mouse */
+.rodape a:hover::after {
+    left: 0;
+}
+
+.rodape a{
+    margin-top: -17px;
+}
+
+.rodape a:hover {
+    color: white; /* Mantém o texto visível */
+}
+
+/* Ícones do rodapé */
+.rodape i {
+    font-size: 28px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Efeito de rotação e mudança de cor ao passar o mouse */
+.rodape a:hover i {
+    transform: rotate(10deg) scale(1.1);
+    color: #6e1e4f;
+}
+
+.img-rodape img{
+    margin-top: 15px;
+}
+
+hr{
+    margin-top: 30px;
+}
+
+.copy h1{
+    font-weight: 300;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+    /* gerais */
+    .flex{
+        flex-direction: column;
+    }
+    .interface{
+        padding: 10px;
+    }
+    /* header */
+    header button{
+        display: none;
+    }
+
+    .logo-header{
+        margin-bottom: -100px;
+    }
+    
+    /* sec1 */
+    .sec-1 .flex{
+        flex-direction: column-reverse;
+    }
+
+    .txt-topo h1{
+        line-height: 45px;
+        font-size: 35px;
+    }
+
+    section.sec-1{
+        height: 1050px;
+    }
+
+    .txt-topo{
+        margin-top: 0;
+    }
+
+    /* sec2 */
+    section.sec-2{
+        height: 1000px;
+    }
+
+    /* sec3 */
+    section.sec-3{
+        height: 1800px;
+        margin-top: 600px;
+    }
+
+    .para3{
+        display: none;
+    }
+
+    /* sec4 */
+    section.sec-4{
+        height: 1200px;
+    }
+
+    .check{
+        margin-left: -300px;
+    }
+
+    .txt-escopo{
+        margin-top: -295px;
+        margin-left: 90px;
+    }
+
+    .txt-esc h1 {
+        font-size: 27px;
+        line-height: 30px;
+    }
+    
+    .txt-esc p {
+        font-size: 14px;
+    }
+
+    /* sobre */
+    section.sec-5{
+        height: 1200px;
+    }
+
+    .txt-sobre p{
+        font-size: 16px;
+    }
+
+    .txt-sobre .button{
+        margin-top: 20px;
+    }
+
+    /* rodape */
+    section.rodape{
+        height: 630px;
+    }
+
+    .txt-rodape p{
+        text-align: left;
+        font-size: 16px;
+    }
+    
+    .rdireita{
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+
+    .rdireita h1{
+        font-size: 35px;
+    }
+
+    .copy h1{
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+
+}
