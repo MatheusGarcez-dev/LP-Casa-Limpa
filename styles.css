@@ -552,6 +552,10 @@ hr{
     .logo-header{
         margin-bottom: -100px;
     }
+
+    .links-header{
+        display: none;
+    }
     
     /* sec1 */
     .sec-1 .flex{
